@@ -43,7 +43,7 @@ with open("classes.json", "r") as f:
     class_names = json.load(f)
 
 import tensorflow as tf
-m=tf.keras.models.load_model("cat.keras")
+m=tf.keras.models.load_model("CAT.keras")
 img = tf.keras.utils.load_img("D:/namita/dog-cat-class (3)/dog-cat-class/test/p1.jpg", 
                               target_size=(64,64))
 x = tf.keras.utils.img_to_array(img)
